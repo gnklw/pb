@@ -1,5 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        double a = (double) 10 / 100;
+        System.out.println((int) a);
+
+
+
     }
 }
