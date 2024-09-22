@@ -13,7 +13,7 @@ public class Journey {
         double price = 0;
 
         if (budget <= 100) {
-            destiantion = "Bugaria";
+            destiantion = "Bulgaria";
             price = switch (season) {
                 case "winter"-> budget * 70 / 100;
                 case "summer"-> budget * 30 / 100;
