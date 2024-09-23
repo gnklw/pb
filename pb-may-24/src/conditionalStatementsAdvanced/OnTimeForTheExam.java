@@ -27,13 +27,14 @@ public class OnTimeForTheExam {
 
         System.out.println(arrivalStatus);
 
-        String arrivalPeriod = diffMinutes > 0 ? "before" : "after";
-        diffMinutes = Math.abs(diffMinutes);
-
-        if (diffMinutes < 60) {
-            System.out.printf("%d minutes %s the start%n", diffMinutes, arrivalPeriod);
-        } else {
-            System.out.printf("%d:%02d hours %s the start%n", diffMinutes / 60, diffMinutes % 60, arrivalPeriod);
+        if (diffMinutes != 0) {
+            String arrivalPeriod = diffMinutes > 0 ? "before" : "after";
+            diffMinutes = Math.abs(diffMinutes);
+            if (diffMinutes < 60) {
+                System.out.printf("%d minutes %s the start%n", diffMinutes, arrivalPeriod);
+            } else {
+                System.out.printf("%d:%02d hours %s the start%n", diffMinutes / 60, diffMinutes % 60, arrivalPeriod);
+            }
         }
     }
 }

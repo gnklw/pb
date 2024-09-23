@@ -34,12 +34,23 @@ public class OnTimeForTheExam {
             } else {
                 System.out.printf("%d minutes after the start", diff);
             }
-        } else {
+        } else if (diff > 0) {
             if (diff >= 60) {
                 System.out.printf("%d:%02d hours before the start", diff / 60, diff % 60);
             } else {
                 System.out.printf("%d minutes before the start", diff);
             }
         }
+
+        //alt result print
+//        if (diff != 0) {
+//            String timing = diff > 0 ? "before" : "after";
+//            diff = Math.abs(diff);
+//            if (diff < 60) {
+//                System.out.printf("%d minutes %s the start%n", diff, timing);
+//            } else {
+//                System.out.printf("%d:%02d hours %s the start%n", diff / 60, diff % 60, timing);
+//            }
+//        }
     }
 }
