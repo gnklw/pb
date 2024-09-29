@@ -2,15 +2,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        String a = "";
-        if (true) {
-            a = "1";
-        } else {
-            a = "b";
+        int n = Integer.parseInt(scanner.nextLine());
+
+        int minNum = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            int num = Integer.parseInt(scanner.nextLine());
+
+            if (minNum > num) {
+                minNum = num;
+            }
         }
 
-
-        a = true ? "a" : "b";
+        System.out.println(minNum);
     }
 }
