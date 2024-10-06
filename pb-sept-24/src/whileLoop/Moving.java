@@ -10,18 +10,18 @@ public class Moving {
         int l = Integer.parseInt(scanner.nextLine());
         int h = Integer.parseInt(scanner.nextLine());
 
-        int freeSpace = w * l * h;
+        int space = w * l * h;
 
         String input;
-        while (freeSpace > 0 && !"Done".equalsIgnoreCase(input = scanner.nextLine())) {
-            freeSpace -= Integer.parseInt(input);
+        while (space > 0 && !"Done".equals(input = scanner.nextLine())) {
+            space -= Integer.parseInt(input);
         }
 
-        if (freeSpace > 0) {
-            System.out.printf("%d Cubic meters left.", freeSpace);
+        if (space > 0) {
+            System.out.printf("%d Cubic meters left.", space);
         } else {
             System.out.printf("No more free space! You need %d Cubic meters more.",
-                    Math.abs(freeSpace));
+                    Math.abs(space));
         }
     }
 }

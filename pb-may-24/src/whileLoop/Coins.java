@@ -7,7 +7,6 @@ public class Coins {
         Scanner scanner = new Scanner(System.in);
         double change = Double.parseDouble(scanner.nextLine());
         int coins = 0;
-
         int left = (int) Math.round(change * 100);
 
         while (left > 0) {

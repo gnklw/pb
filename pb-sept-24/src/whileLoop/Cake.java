@@ -12,7 +12,7 @@ public class Cake {
         int pieces = w * l;
 
         String input;
-        while (pieces > 0 && !"STOP".equalsIgnoreCase(input = scanner.nextLine())) {
+        while (pieces > 0 && !"STOP".equals(input = scanner.nextLine())) {
             pieces -= Integer.parseInt(input);
         }
 
